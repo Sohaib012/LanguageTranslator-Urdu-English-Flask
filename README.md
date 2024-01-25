@@ -1,3 +1,3 @@
-# coding-project
-# About
-English-Spanish language translator built using Flask framework in python.
+# coding-project-using-flask-coursera
+
+English-Urdu language translator built using Flask framework via deep_translator.
