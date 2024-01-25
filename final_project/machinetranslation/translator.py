@@ -1,33 +1,30 @@
-"""
-Module to translate text between English and French using the deep_translator's MyMemoryTranslator
-"""
-
 from deep_translator import MyMemoryTranslator
 
-def english_to_french(english_text):
+def english_to_urdu(english_text):
     """
-    Translate English text to French
+    Translate English text to Urdu
 
     Args:
-    english_text (str): Text to be translated to French
+        english_text (str): Text to be translated to Urdu
 
     Returns:
-    str: Translated text in French
+        str: Translated text in Urdu
     """
-    translator = MyMemoryTranslator(source='en-US', target='fr-FR')
-    french_text = translator.translate(text=english_text)
-    return french_text
+    translator = MyMemoryTranslator(source='en-US', target='ur')  # Use 'ur' for Urdu
+    urdu_text = translator.translate(text=english_text)
+    return urdu_text
 
-def french_to_english(french_text):
+
+def urdu_to_english(urdu_text):
     """
-    Translate French text to English
+    Translate Urdu text to English
 
     Args:
-    french_text (str): Text to be translated to English
+        urdu_text (str): Text to be translated to English
 
     Returns:
-    str: Translated text in English
+        str: Translated text in English
     """
-    translator = MyMemoryTranslator(source='fr-FR', target='en-US')
-    english_text = translator.translate(text=french_text)
+    translator = MyMemoryTranslator(source='ur', target='en-US')  # Use 'ur' for Urdu
+    english_text = translator.translate(text=urdu_text)
     return english_text
